@@ -1,11 +1,10 @@
-import React from "react";
-import logo from "./logo.svg";
 import "./App.scss";
+import Dashboard from "./components/pages/Dashboard/Dashboard";
 
 function App() {
   return (
     <div className="App">
-      <h1>HumanEdge</h1>
+      <Dashboard />
     </div>
   );
 }
