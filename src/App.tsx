@@ -1,7 +1,6 @@
 import "./App.scss";
+import { RootRoute } from "./routes/RootRoute";
 
-function App() {
-  return <div className="App"></div>;
+export default function App() {
+  return <RootRoute />;
 }
-
-export default App;
