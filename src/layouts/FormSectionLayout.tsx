@@ -1,4 +1,3 @@
-import * as React from "react";
 import { Box, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import { IFormSectionLayoutProps } from "./FormSectionLayout.interface";
@@ -13,7 +12,7 @@ function FormSectionLayout(props: IFormSectionLayoutProps) {
       className={`form-section-container ${className}`}
     >
       <Grid
-        size={{ sm: 12, md: 3, lg: 5, xl: 3 }}
+        size={{ sm: 12, md: 5, lg: 5, xl: 4 }}
         className="form-section-left"
       >
         <Box component="section" className="titles-container">
@@ -26,7 +25,8 @@ function FormSectionLayout(props: IFormSectionLayoutProps) {
         </Box>
       </Grid>
       <Grid
-        size={{ sm: 12, md: 9, lg: 7, xl: 8 }}
+        size={{ sm: 12, md: 7, lg: 7, xl: 8 }}
+        offset={{ sm: 12, md: 5, lg: 5, xl: 4 }}
         className="form-section-right"
       >
         {children}
