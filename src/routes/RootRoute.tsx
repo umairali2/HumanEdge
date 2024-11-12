@@ -1,6 +1,5 @@
-import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Feedback from "../pages/Feedback";
+import Feedback from "../pages/Feedback/Feedback";
 
 type Props = {};
 
