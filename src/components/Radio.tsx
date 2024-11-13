@@ -26,7 +26,7 @@ const RadioButtons = (props: Props) => {
   return (
     <div>
       {items.map((group) => (
-        <FormControl sx={{ width: "100%" }}>
+        <FormControl sx={{ width: "100%" }} key={group.id}>
           <>
             <Label>{group.label}</Label>
             <RadioGroup
@@ -37,6 +37,7 @@ const RadioButtons = (props: Props) => {
             >
               {group.value.map((val) => (
                 <FormControlLabel
+                  key={val}
                   value={val}
                   control={<Radio />}
                   label={val}

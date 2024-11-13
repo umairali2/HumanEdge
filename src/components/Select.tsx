@@ -37,7 +37,7 @@ const SelectComponent = (props: Props) => {
   return (
     <div>
       {items.map((item) => (
-        <FormControl fullWidth>
+        <FormControl fullWidth key={item.id}>
           <InputLabel id={item.id}>{item.label}</InputLabel>
           <Select
             labelId={item.id}
@@ -48,7 +48,9 @@ const SelectComponent = (props: Props) => {
             sx={{ marginBottom: "48px" }}
           >
             {item.options.map((option) => (
-              <MenuItem value={option.value}>{option.name}</MenuItem>
+              <MenuItem key={option.value} value={option.value}>
+                {option.name}
+              </MenuItem>
             ))}
           </Select>
         </FormControl>
