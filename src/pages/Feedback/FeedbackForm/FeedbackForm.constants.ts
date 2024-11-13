@@ -15,6 +15,31 @@ export const questions = [
     additionalClassName: "",
     isDisabled: false,
   },
+  {
+    label: "Does this person show dedication and commitment to their work?",
+    value: ["No", "Rarely", "Sometimes", "Often", "Always"],
+    id: "showDedicationAndCommitment",
+    directionRow: true,
+    additionalClassName: "",
+    isDisabled: false,
+  },
+  {
+    label: "Is this person a role model for positive work behavior?",
+    value: ["No", "Not often", "Sometimes", "Frequently", "Always"],
+    id: "positiveWorkBehavior",
+    directionRow: true,
+    additionalClassName: "",
+    isDisabled: false,
+  },
+  {
+    label:
+      "Does this person celebrate others' achievements and give credit where it's due?",
+    value: ["No", "Occasionally", "Sometimes", "Often", "Always"],
+    id: "celebrateOthersAchievementsAndGiveCredit",
+    directionRow: true,
+    additionalClassName: "",
+    isDisabled: false,
+  },
 ];
 
 export const selectFeedbackType = [
