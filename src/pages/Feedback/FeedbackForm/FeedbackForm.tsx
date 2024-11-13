@@ -1,17 +1,19 @@
 import Grid from "@mui/material/Grid2";
 import "./FeedbackForm.scss";
 import RadioButtons from "../../../components/Radio";
-import { questions, selectFeedbackType } from "./FeedbackForm.constants";
+import { selectFeedbackType } from "./FeedbackForm.constants";
 import SelectComponent from "../../../components/Select";
 import TextAreaComponent from "../../../components/TextArea";
 import ButtonComponent from "../../../components/ButtonComponent";
+import { feedbackQuestions } from "./FeedbackForm.helper.";
 
 type Props = {
   handleChange: any;
+  feedbackPayload: any;
 };
 
 const FeedbackForm = (props: Props) => {
-  const { handleChange } = props;
+  const { handleChange, feedbackPayload } = props;
 
   return (
     <>
@@ -20,7 +22,10 @@ const FeedbackForm = (props: Props) => {
           items={selectFeedbackType}
           handleChange={handleChange}
         />
-        <RadioButtons items={questions} handleChange={handleChange} />
+        <RadioButtons
+          items={feedbackQuestions(feedbackPayload)}
+          handleChange={handleChange}
+        />
         <TextAreaComponent
           label="Enter your thoughts, if any"
           handleChange={handleChange}

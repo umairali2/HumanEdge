@@ -42,15 +42,24 @@ export const questions = [
   },
 ];
 
+export const feedbackTypes = {
+  Praise: "Praise",
+  OpportunityArea: "Opportunity Area",
+  QuickFeedback: "Quick Feedback",
+};
+
 export const selectFeedbackType = [
   {
     label: "Select feedback type",
-    id: "feedback-type",
+    id: "feedbackType",
     defaultValue: "Quick Feedback",
     options: [
-      { name: "Praise", value: "Praise" },
-      { name: "Opportunity Area", value: "Opportunity Area" },
-      { name: "Quick Feedback", value: "Quick Feedback" },
+      { name: feedbackTypes.Praise, value: feedbackTypes.Praise },
+      {
+        name: feedbackTypes.OpportunityArea,
+        value: feedbackTypes.OpportunityArea,
+      },
+      { name: feedbackTypes.QuickFeedback, value: feedbackTypes.QuickFeedback },
     ],
   },
 ];
