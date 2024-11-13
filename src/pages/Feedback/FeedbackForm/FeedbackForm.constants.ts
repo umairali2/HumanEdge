@@ -46,6 +46,7 @@ export const selectFeedbackType = [
   {
     label: "Select feedback type",
     id: "feedback-type",
+    defaultValue: "Quick Feedback",
     options: [
       { name: "Praise", value: "Praise" },
       { name: "Opportunity Area", value: "Opportunity Area" },

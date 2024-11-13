@@ -16,6 +16,7 @@ interface IItems {
   label: string;
   id: string;
   options: IOptions[];
+  defaultValue: string;
 }
 
 interface Props {
@@ -24,9 +25,9 @@ interface Props {
 }
 
 const SelectComponent = (props: Props) => {
-  const [feedbackType, setFeedbackType] = useState("");
-
   const { items, handleChange } = props;
+
+  const [feedbackType, setFeedbackType] = useState(items[0].defaultValue);
 
   const handleFeedbackType = (event: SelectChangeEvent, id: string) => {
     setFeedbackType(event.target.value);
