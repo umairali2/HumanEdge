@@ -5,15 +5,23 @@ import { useState } from "react";
 import { feedbackTypes } from "./FeedbackForm/FeedbackForm.constants";
 
 function Feedback() {
-  const [feedbackPayload, setFeedbackPayload] = useState({
+  const [feedbackPayload, setFeedbackPayload] = useState<any>({
     feedbackType: feedbackTypes.QuickFeedback,
   });
 
   const handleChange = (event: SelectChangeEvent, id: string) => {
     const value = event.target.value;
-    setFeedbackPayload({
-      ...feedbackPayload,
-      [id]: value,
+
+    setFeedbackPayload((prevPayload: any) => {
+      const updatedPayload = { ...prevPayload, [id]: value };
+      if (
+        id === "feedbackType" &&
+        value.length !== prevPayload.feedbackType.length
+      ) {
+        return { feedbackType: value };
+      }
+
+      return updatedPayload;
     });
   };
 
