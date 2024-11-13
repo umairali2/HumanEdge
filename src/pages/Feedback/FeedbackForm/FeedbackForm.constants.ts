@@ -1,4 +1,4 @@
-export const questions = [
+export const PraiseQuestions = [
   {
     label:
       "Does this person consistently contribute positively to the team atmosphere?",
@@ -42,6 +42,84 @@ export const questions = [
   },
 ];
 
+export const OpportunityAreaQuestions = [
+  {
+    label: "Does this person effectively communicate their ideas to the team?",
+    value: ["No", "Rarely", "Sometimes", "Often", "Always"],
+    id: "effectivelyCommunicateTheirIdeas",
+    directionRow: true,
+    additionalClassName: "",
+  },
+  {
+    label: "Does this person seek and accept constructive feedback?",
+    value: ["No", "Rarely", "Sometimes", "Often", "Always"],
+    id: "seekAndAcceptConstructiveFeedback",
+    directionRow: true,
+    additionalClassName: "",
+    isDisabled: false,
+  },
+  {
+    label: "Is this person open to collaborating with team members?",
+    value: ["No", "Rarely", "Sometimes", "Often", "Always"],
+    id: "openToCollaboratingWithTeam",
+    directionRow: true,
+    additionalClassName: "",
+    isDisabled: false,
+  },
+  {
+    label: "Does this person complete tasks on time and meet deadlines?",
+    value: ["No", "Occasionally", "Sometimes", "Mostly", "Always"],
+    id: "completeTasksOnTime",
+    directionRow: true,
+    additionalClassName: "",
+    isDisabled: false,
+  },
+  {
+    label: "Is this person proactive in identifying areas for improvement?",
+    value: ["No", "Rarely", "Sometimes", "Often", "Always"],
+    id: "proactiveInIdentifyingAreasForImprovement",
+    directionRow: true,
+    additionalClassName: "",
+    isDisabled: false,
+  },
+  {
+    label:
+      "Does this person demonstrate problem-solving skills when facing challenges?",
+    value: ["No", "Rarely", "Sometimes", "Often", "Always"],
+    id: "demonstrateProblemSolvingSkills",
+    directionRow: true,
+    additionalClassName: "",
+    isDisabled: false,
+  },
+];
+
+export const QuickFeedbackQuestions = [
+  {
+    label: "Would you like to work with this person on future projects?",
+    value: ["No", "Unlikely", "Maybe", "Likely", "Definitely"],
+    id: "workWithThisPersonOnFutureProjects",
+    directionRow: true,
+    additionalClassName: "",
+  },
+  {
+    label: "Do you feel this person contributes value to team meetings?",
+    value: ["No", "Rarely", "Sometimes", "Mostly", "Always"],
+    id: "personContributesValueToTeamMeetings",
+    directionRow: true,
+    additionalClassName: "",
+    isDisabled: false,
+  },
+  {
+    label:
+      "Does this person adapt well to new situations or changes in the project?",
+    value: ["No", "Rarely", "Sometimes", "Often", "Always"],
+    id: "personAdaptWellToNewSituations",
+    directionRow: true,
+    additionalClassName: "",
+    isDisabled: false,
+  },
+];
+
 export const feedbackTypes = {
   Praise: "Praise",
   OpportunityArea: "Opportunity Area",
@@ -52,7 +130,7 @@ export const selectFeedbackType = [
   {
     label: "Select feedback type",
     id: "feedbackType",
-    defaultValue: "Quick Feedback",
+    defaultValue: feedbackTypes.QuickFeedback,
     options: [
       { name: feedbackTypes.Praise, value: feedbackTypes.Praise },
       {

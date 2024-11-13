@@ -6,7 +6,7 @@ import { feedbackTypes } from "./FeedbackForm/FeedbackForm.constants";
 
 function Feedback() {
   const [feedbackPayload, setFeedbackPayload] = useState({
-    "feedback-type": feedbackTypes.QuickFeedback,
+    feedbackType: feedbackTypes.QuickFeedback,
   });
 
   const handleChange = (event: SelectChangeEvent, id: string) => {

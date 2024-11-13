@@ -1,14 +1,19 @@
-import { feedbackTypes, questions } from "./FeedbackForm.constants";
+import {
+  feedbackTypes,
+  OpportunityAreaQuestions,
+  PraiseQuestions,
+  QuickFeedbackQuestions,
+} from "./FeedbackForm.constants";
 
 export const feedbackQuestions = (feedbackPayload: any) => {
-  return (
-    (feedbackPayload.feedbackType === feedbackTypes.Praise && questions) ||
-    [] ||
-    (feedbackPayload.feedbackType === feedbackTypes.OpportunityArea &&
-      questions) ||
-    [] ||
-    (feedbackPayload.feedbackType === feedbackTypes.QuickFeedback &&
-      questions) ||
-    []
-  );
+  switch (feedbackPayload.feedbackType) {
+    case feedbackTypes.Praise:
+      return PraiseQuestions;
+    case feedbackTypes.OpportunityArea:
+      return OpportunityAreaQuestions;
+    case feedbackTypes.QuickFeedback:
+      return QuickFeedbackQuestions;
+    default:
+      return [];
+  }
 };
