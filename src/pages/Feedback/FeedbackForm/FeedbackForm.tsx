@@ -10,10 +10,11 @@ import { feedbackQuestions } from "./FeedbackForm.helper.";
 type Props = {
   handleChange: any;
   feedbackPayload: any;
+  onSubmit: any;
 };
 
 const FeedbackForm = (props: Props) => {
-  const { handleChange, feedbackPayload } = props;
+  const { handleChange, feedbackPayload, onSubmit } = props;
 
   return (
     <>
@@ -30,7 +31,11 @@ const FeedbackForm = (props: Props) => {
           label="Enter your thoughts, if any"
           handleChange={handleChange}
         />
-        <ButtonComponent text="Submit" extraClass="pull-right" />
+        <ButtonComponent
+          text="Submit"
+          extraClass="pull-right"
+          onSubmit={onSubmit}
+        />
       </Grid>
     </>
   );
