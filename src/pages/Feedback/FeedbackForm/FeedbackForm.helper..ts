@@ -40,7 +40,7 @@ export const normalizedFeedbackPayload = (payload: FeedbackInterface) => {
 
   const result = {
     feedbackType: payload.feedbackType,
-    thoughts: payload.thoughts,
+    thoughts: payload.thoughts || "-",
     feedbackResponse,
   };
 
