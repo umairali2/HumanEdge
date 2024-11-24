@@ -1,4 +1,5 @@
 {
   "/v1/*": "/$1",
-  "/submit-user-feedback": "/submit-user-feedback"
+  "/submit-user-feedback": "/submit-user-feedback",
+  "/get-all-user-praise-feedback": "/submit-user-feedback?feedbackType=praise"
 }
