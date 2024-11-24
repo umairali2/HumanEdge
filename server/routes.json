@@ -1,3 +1,4 @@
 {
-  "/api/v1/*": "/$1"
+  "/v1/*": "/$1",
+  "/submit-user-feedback": "/submit-user-feedback"
 }

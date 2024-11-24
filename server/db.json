@@ -1,12 +1,142 @@
 {
-  "praise-feedback": {},
+  "submit-user-feedback": [
+    {
+      "id": "daa6bb4e-cb06-41c6-b326-9ebed1f886e2",
+      "feedbackType": "quickfeedback",
+      "thoughts": "some thoughts",
+      "feedbackResponse": [
+        {
+          "id": "workWithThisPersonOnFutureProjects",
+          "label": "Would you like to work with this person on future projects?",
+          "response": "Likely"
+        },
+        {
+          "id": "personContributesValueToTeamMeetings",
+          "label": "Do you feel this person contributes value to team meetings?",
+          "response": "Always"
+        },
+        {
+          "id": "personAdaptWellToNewSituations",
+          "label": "Does this person adapt well to new situations or changes in the project?",
+          "response": "Always"
+        }
+      ]
+    },
+    {
+      "id": "a28a6110-c82a-4489-a0f6-46c642379949",
+      "feedbackType": "quickfeedback",
+      "thoughts": "You are awesome",
+      "feedbackResponse": [
+        {
+          "id": "workWithThisPersonOnFutureProjects",
+          "label": "Would you like to work with this person on future projects?",
+          "response": "Definitely"
+        },
+        {
+          "id": "personContributesValueToTeamMeetings",
+          "label": "Do you feel this person contributes value to team meetings?",
+          "response": "Always"
+        },
+        {
+          "id": "personAdaptWellToNewSituations",
+          "label": "Does this person adapt well to new situations or changes in the project?",
+          "response": "Always"
+        }
+      ]
+    },
+    {
+      "id": "eb2ec253-62fd-46de-94b0-99124f840a77",
+      "feedbackType": "praise",
+      "thoughts": "You are awesome 2",
+      "feedbackResponse": [
+        {
+          "id": "consistentlyContribute",
+          "label": "Does this person consistently contribute positively to the team atmosphere?",
+          "response": "Always"
+        },
+        {
+          "id": "willingToHelp",
+          "label": "Is this person willing to help others when they are stuck?",
+          "response": "Usually"
+        },
+        {
+          "id": "showDedicationAndCommitment",
+          "label": "Does this person show dedication and commitment to their work?",
+          "response": "Always"
+        },
+        {
+          "id": "positiveWorkBehavior",
+          "label": "Is this person a role model for positive work behavior?",
+          "response": "Frequently"
+        },
+        {
+          "id": "celebrateOthersAchievementsAndGiveCredit",
+          "label": "Does this person celebrate others' achievements and give credit where it's due?",
+          "response": "Always"
+        }
+      ]
+    },
+    {
+      "id": "ba2c5e20-bdcb-4377-89f3-f197fa202f66",
+      "feedbackType": "opportunityarea",
+      "thoughts": "You are awesome 3",
+      "feedbackResponse": [
+        {
+          "id": "effectivelyCommunicateTheirIdeas",
+          "label": "Does this person effectively communicate their ideas to the team?",
+          "response": "Rarely"
+        },
+        {
+          "id": "seekAndAcceptConstructiveFeedback",
+          "label": "Does this person seek and accept constructive feedback?",
+          "response": "Often"
+        },
+        {
+          "id": "openToCollaboratingWithTeam",
+          "label": "Is this person open to collaborating with team members?",
+          "response": "Sometimes"
+        },
+        {
+          "id": "completeTasksOnTime",
+          "label": "Does this person complete tasks on time and meet deadlines?",
+          "response": "Mostly"
+        },
+        {
+          "id": "proactiveInIdentifyingAreasForImprovement",
+          "label": "Is this person proactive in identifying areas for improvement?",
+          "response": "Often"
+        },
+        {
+          "id": "demonstrateProblemSolvingSkills",
+          "label": "Does this person demonstrate problem-solving skills when facing challenges?",
+          "response": "Sometimes"
+        }
+      ]
+    }
+  ],
   "posts": [
-    { "id": "1", "title": "a title", "views": 100 },
-    { "id": "2", "title": "another title", "views": 200 }
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    }
   ],
   "comments": [
-    { "id": "1", "text": "a comment about post 1", "postId": "1" },
-    { "id": "2", "text": "another comment about post 1", "postId": "1" }
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
   ],
   "profile": {
     "name": "typicode"
