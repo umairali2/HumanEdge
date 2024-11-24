@@ -1,3 +1,5 @@
+import { v4 as uuidv4 } from "uuid";
+
 import {
   feedbackTypes,
   OpportunityAreaQuestions,
@@ -39,10 +41,10 @@ export const normalizedFeedbackPayload = (payload: FeedbackInterface) => {
   });
 
   const result = {
-    feedbackType: payload.feedbackType,
+    id: uuidv4(),
+    feedbackType: payload.feedbackType.replace(" ", "").toLowerCase(),
     thoughts: payload.thoughts || "-",
     feedbackResponse,
   };
-
   return result;
 };

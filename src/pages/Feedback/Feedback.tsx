@@ -4,6 +4,7 @@ import FeedbackForm from "./FeedbackForm/FeedbackForm";
 import { useState } from "react";
 import { feedbackTypes } from "./FeedbackForm/FeedbackForm.constants";
 import { normalizedFeedbackPayload } from "./FeedbackForm/FeedbackForm.helper.";
+import { submitFeedbackApi } from "./API";
 
 function Feedback() {
   const [feedbackPayload, setFeedbackPayload] = useState<any>({
@@ -26,8 +27,9 @@ function Feedback() {
     });
   };
 
-  const onSubmit = (e: any) => {
+  const onSubmit = () => {
     const payload = normalizedFeedbackPayload(feedbackPayload);
+    submitFeedbackApi(payload);
   };
 
   return (
