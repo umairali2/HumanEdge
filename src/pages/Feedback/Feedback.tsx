@@ -3,6 +3,7 @@ import FormSectionLayout from "../../layouts/FormSectionLayout";
 import FeedbackForm from "./FeedbackForm/FeedbackForm";
 import { useState } from "react";
 import { feedbackTypes } from "./FeedbackForm/FeedbackForm.constants";
+import { normalizedFeedbackPayload } from "./FeedbackForm/FeedbackForm.helper.";
 
 function Feedback() {
   const [feedbackPayload, setFeedbackPayload] = useState<any>({
@@ -25,6 +26,10 @@ function Feedback() {
     });
   };
 
+  const onSubmit = (e: any) => {
+    const payload = normalizedFeedbackPayload(feedbackPayload);
+  };
+
   return (
     <FormSectionLayout
       title="Good feedback is the key to improvement"
@@ -33,6 +38,7 @@ function Feedback() {
       <FeedbackForm
         handleChange={handleChange}
         feedbackPayload={feedbackPayload}
+        onSubmit={onSubmit}
       />
     </FormSectionLayout>
   );
