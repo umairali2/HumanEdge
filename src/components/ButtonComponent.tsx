@@ -3,11 +3,12 @@ import { Button } from "@mui/material";
 interface IButtonComponent {
   text: string;
   extraClass?: string;
+  onSubmit: any;
 }
 const ButtonComponent = (props: IButtonComponent) => {
-  const { text, extraClass } = props;
+  const { text, extraClass, onSubmit } = props;
   return (
-    <Button variant="contained" className={extraClass || ""}>
+    <Button variant="contained" className={extraClass || ""} onClick={onSubmit}>
       {text}
     </Button>
   );
